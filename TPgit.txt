@@ -1,0 +1,44 @@
+¿Qué es GIT? ¿Para qué sirve?
+
+Git es un sistema de control de versionado. Sirve para ir guardando las modificaciones, los avances que haces en un proyecto y te da la posibilidad de retornar a una copia anterior.
+
+¿Cuáles son los tres sistemas de control de versiones?, explicar cada uno con sus ventajas y desventajas.
+
+Sistemas de Control de Versiones Locales:
+Un metodo muy usado en el que se copia archivos a otro directorio, lo cual lo vuelve sencillo pero, es propenso a errores debido a que podríamos guardar un archivo en un directorio equivocado o sobrescribir estos sin querer.
+
+Sistemas de Control de Versiones Centralizados:
+
+Se crean para solucionar la necesidad de colaborar con desarrolladores en distintos sistemas. Es un servidor que guarda todos los archivos versionados y varias personas lo pueden descargar. Tiene ventajas como saber el progreso de los demás,
+los adm pueden controlar la capacidad de cada usuario y es más fácil de administrar que VCS. Por otro lado, tiene desventajas como: si se cae el servidor por un tiempo, durante todo ese tiempo nadie podrá colaborar o guardar cambios; en caso de que se rompa el disco duro que contiene la DB y no se hayan realizado copias todo el proyecto se perderá, menos las copias locales de cada máquina.
+
+Sistemas de Control de Versiones Distribuidos:
+Ofrece solución a los problemas antes mencionados, haciendo que los clientes descarguen la última copia instantanea de los archivos y se replica completamente el repositorio. Por lo que evitamos problemas anteriormente mencionados. Además estos sistemas se encargan de manejar varios repositorios remotos en los que puedes colaborar simultaneamente con diferentes grupos de personas.
+
+¿Cuáles son los 3 estados principales de GIT?, explicar para que sirve cada uno
+
+Modificado: En este estado el archivo tiene modificaciones en el área de trabajo.
+Preparado: Se preparan los archivos añadiendolos al área de preparación.
+Confirmado: Se confirman las modificaciones hechas en el area de preparación y se almacena esa copia de forma permanente en el repositorio Git.
+
+¿Qué se guarda en un repositorio?
+
+En un repositorio se almacenan distintos tipos de archivos y carpetas en las que estés trabajando.
+
+¿Cuáles son los 4 estados de archivos?, explicar cada uno
+
+Archivos untracked:
+
+Archivos que no almacena Git por lo que no hay registro de estos y solo se guardan en el disco duro.
+
+Archivos unstaged:
+
+Archivos de los cuales Git ya tiene un registro pero este es desactualizado y sus últimas versiones solo están almacenadas en el disco duro
+
+Archivos staged:
+
+Archivos en desarrollo que tienen registro en Git y este sabe de la existencia de los últimos cambios pero aún no se han guardado estos.
+
+Archivos traked:
+
+Son los archivos almacenados en git que no tienen cambios pendientes y se guardó la última actualización de estos.
